@@ -1,5 +1,8 @@
 <app-header titulo="Alert"></app-header>
 
-<ion-content>
-  <h1>Alert Page</h1>
+<ion-content [scrollEvents]="true">
+  <h1>Alert Page</h1><br>
+  <ion-button expand="full" color="primary" (click)="presentAlert()">Mensaje</ion-button>
+  <ion-button expand="full" color="success" (click)="presentAlertPrompt()">Input</ion-button>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus rerum voluptatem architecto inventore! Error blanditiis, exercitationem molestiae nam veritatis atque voluptas illo, ipsa quia debitis magni accusamus tempore reiciendis necessitatibus.</p>
 </ion-content>

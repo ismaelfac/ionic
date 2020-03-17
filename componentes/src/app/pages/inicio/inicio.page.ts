@@ -13,7 +13,7 @@ export class InicioPage implements OnInit {
       RedirectTo: '/action-sheet'
     },
     {
-      icon: 'appstore',
+      icon: 'alarm',
       name: 'Alert',
       RedirectTo: '/alert'
     }
