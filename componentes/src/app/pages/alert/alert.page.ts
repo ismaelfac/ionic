@@ -8,6 +8,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class AlertPage implements OnInit {
   @Input() titulo: string;
+  
   constructor(public alertCtrl: AlertController, public alertProntCtrl: AlertController) { }
 
   ngOnInit() {

@@ -1,0 +1,24 @@
+<app-header [titulo]="titulo || 'Buttons'"></app-header>
+
+<ion-content padding mode="ios">
+    <!--Botones Normales-->
+    <ion-row>
+        <ion-col>
+            <ion-button size="default" expand="full">Small</ion-button>
+        </ion-col>
+        <ion-col>
+            <ion-button size="default" expand="full">Default</ion-button>
+        </ion-col>
+    </ion-row>
+    <ion-button size="large" expand="full">Large</ion-button>
+
+    <!--Anchor-->
+    <ion-button class="top20" expand="full" routerLink="/alert" color="tertiary">
+        Anchor
+    </ion-button>
+
+    <!--Fill-->
+    <ion-button class="top-20" fill="clear">Clear</ion-button>
+    <ion-button class="top-20" fill="outline">Outline</ion-button>
+    <ion-button class="top-20" fill="solid">Solid</ion-button>
+</ion-content>
