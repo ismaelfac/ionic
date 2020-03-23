@@ -61,6 +61,16 @@ export class InicioPage implements OnInit {
       icon: 'chatbox',
       name: 'Inputs',
       RedirectTo: '/input'
+    },
+    {
+      icon: 'list',
+      name: 'List',
+      RedirectTo: '/list'
+    },
+    {
+      icon: 'list',
+      name: 'List-reorder',
+      RedirectTo: '/list-reorder'
     }
   ];
   constructor() { }

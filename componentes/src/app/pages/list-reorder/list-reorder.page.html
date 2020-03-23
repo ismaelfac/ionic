@@ -1,0 +1,10 @@
+<app-header titulo="List-Reorder"></app-header>
+
+<ion-content padding mode="ios">
+  <ion-list>
+    <ion-reorder-group *ngFor="let item of heroes" disabled="true">
+      <ion-label>{{ item }}</ion-label>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-reorder-group>
+  </ion-list>
+</ion-content>
