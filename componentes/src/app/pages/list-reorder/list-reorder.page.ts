@@ -13,7 +13,13 @@ export class ListReorderPage implements OnInit {
   }
 
   reorder(event){
-    console.log('reorder', event);
+    const itemMover = this.heroes.splice(event.detail.from, 1)[0];
+    this.heroes.splice(event.detail.to, 0, itemMover);
+    event.detail.complete();
+  }
+
+  onClick(){
+    console.log(this.heroes);
   }
 
 }

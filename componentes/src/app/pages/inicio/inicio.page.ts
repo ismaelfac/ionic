@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-inicio',
@@ -71,13 +72,21 @@ export class InicioPage implements OnInit {
       icon: 'list',
       name: 'List-reorder',
       RedirectTo: '/list-reorder'
+    },
+    {
+      icon: 'refresh-circle',
+      name: 'Loading',
+      RedirectTo: '/loading'
     }
   ];
-  constructor() { }
+  constructor(private menuCtrl: MenuController) { }
 
   ngOnInit() {
   }
 
+  toogleMenu() {
+    this.menuCtrl.toggle();
+  }
 }
 
 interface Componente {
